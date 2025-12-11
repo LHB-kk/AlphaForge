@@ -23,7 +23,7 @@ for v in [-30., -10., -5., -2., -1., -0.5, -0.01, 0.01, 0.5, 1., 2., 5., 10., 30
 
 def main(
         instruments:str='csi300',
-        train_end:int=2018,
+        train_end:int=2021,
         seeds:list=[0],
         capacity:int=100,
         cuda:int=0,

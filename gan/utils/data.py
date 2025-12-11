@@ -5,11 +5,11 @@ from alphagen.data.expression import *
 
 import os
 def get_data_by_year(
-    train_start = 2010,train_end=2019,valid_year=2020,test_year =2021,
+    train_start = 2011,train_end=2021,valid_year=2022,test_year =2025,
     instruments=None, target=None,freq=None,
                     ):
     QLIB_PATH = {
-        'day':'path/for/qlib',
+        'day':'/root/autodl-tmp/qlib_data/cn_data_202512',
     }
     
     from gan.utils import load_pickle,save_pickle

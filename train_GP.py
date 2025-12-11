@@ -3,8 +3,8 @@ import os
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--instrument',type=str,default='csi300')
-parser.add_argument('--seed',type=str,default='[0,1,2,3,4]')
-parser.add_argument('--years',type=str,default='[2016]')
+parser.add_argument('--seed',type=str,default='[0]')
+parser.add_argument('--years',type=str,default='[2022,2023]')
 parser.add_argument('--freq',type=str,default='day')
 parser.add_argument('--cuda',type=str,default='0')
 
@@ -139,7 +139,7 @@ for seed in args.seed:
 
 
         returned = get_data_by_year(
-            train_start = 2010,train_end=train_end,valid_year=train_end+1,test_year =train_end+2,
+            train_start = 2011,train_end=train_end,valid_year=train_end+1,test_year =train_end+2,
             instruments=instruments, target=target,freq=args.freq,
         )
         data_all, data,data_valid,data_valid_withhead,data_test,data_test_withhead,name = returned
